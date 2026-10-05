@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Different Information Tables</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #222;
+            margin-bottom: 40px;
+        }
+
+        .table-container {
+            background-color: white;
+            padding: 25px;
+            margin: 30px auto;
+            max-width: 1000px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            color: white;
+        }
+
+        /* Student Table */
+        .student-table th {
+            background-color: #007bff;
+        }
+
+        .student-table tr:nth-child(even) {
+            background-color: #f0f7ff;
+        }
+
+        .student-table tr:hover {
+            background-color: #dbeeff;
+        }
+
+        /* Employee Table */
+        .employee-table th {
+            background-color: #28a745;
+        }
+
+        .employee-table tr:nth-child(even) {
+            background-color: #f1fff3;
+        }
+
+        .employee-table tr:hover {
+            background-color: #d9f7df;
+        }
+
+        /* Product Table */
+        .product-table th {
+            background-color: #8e44ad;
+        }
+
+        .product-table tr:nth-child(even) {
+            background-color: #faf3ff;
+        }
+
+        .product-table tr:hover {
+            background-color: #f0d9ff;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #e67e22;
+        }
+
+        .available {
+            color: green;
+            font-weight: bold;
+        }
+
+        .unavailable {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Information Tables</h1>
+
+    <!-- STUDENT TABLE -->
+    <div class="table-container">
+
+        <h2>Student Information</h2>
+
+        <table class="student-table">
+
+            <tr>
+                <th>Student ID</th>
+                <th>Name</th>
+                <th>Course</th>
+                <th>Year</th>
+                <th>CGPA</th>
+            </tr>
+
+            <tr>
+                <td>101</td>
+                <td>Rahul</td>
+                <td>CSE</td>
+                <td>4th Year</td>
+                <td>8.5</td>
+            </tr>
+
+            <tr>
+                <td>102</td>
+                <td>Priya</td>
+                <td>ECE</td>
+                <td>3rd Year</td>
+                <td>8.2</td>
+            </tr>
+
+            <tr>
+                <td>103</td>
+                <td>Arjun</td>
+                <td>IT</td>
+                <td>2nd Year</td>
+                <td>7.9</td>
+            </tr>
+
+            <tr>
+                <td>104</td>
+                <td>Anjali</td>
+                <td>CSE</td>
+                <td>4th Year</td>
+                <td>9.1</td>
+            </tr>
+
+        </table>
+    </div>
+
+
+    <!-- EMPLOYEE TABLE -->
+    <div class="table-container">
+
+        <h2>Employee Information</h2>
+
+        <table class="employee-table">
+
+            <tr>
+                <th>Employee ID</th>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Designation</th>
+                <th>Salary</th>
+            </tr>
+
+            <tr>
+                <td>E001</td>
+                <td>Ravi Kumar</td>
+                <td>IT</td>
+                <td>Software Developer</td>
+                <td>₹45,000</td>
+            </tr>
+
+            <tr>
+                <td>E002</td>
+                <td>Neha Sharma</td>
+                <td>HR</td>
+                <td>HR Manager</td>
+                <td>₹50,000</td>
+            </tr>
+
+            <tr>
+                <td>E003</td>
+                <td>Vikram Singh</td>
+                <td>Finance</td>
+                <td>Accountant</td>
+                <td>₹40,000</td>
+            </tr>
+
+            <tr>
+                <td>E004</td>
+                <td>Swathi</td>
+                <td>Marketing</td>
+                <td>Marketing Executive</td>
+                <td>₹38,000</td>
+            </tr>
+
+        </table>
+    </div>
+
+
+    <!-- PRODUCT TABLE -->
+    <div class="table-container">
+
+        <h2>Product Information</h2>
+
+        <table class="product-table">
+
+            <tr>
+                <th>Product ID</th>
+                <th>Product Name</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Availability</th>
+            </tr>
+
+            <tr>
+                <td>P101</td>
+                <td>Laptop</td>
+                <td>Electronics</td>
+                <td class="price">₹55,000</td>
+                <td class="available">Available</td>
+            </tr>
+
+            <tr>
+                <td>P102</td>
+                <td>Smartphone</td>
+                <td>Electronics</td>
+                <td class="price">₹25,000</td>
+                <td class="available">Available</td>
+            </tr>
+
+            <tr>
+                <td>P103</td>
+                <td>Headphones</td>
+                <td>Accessories</td>
+                <td class="price">₹2,500</td>
+                <td class="unavailable">Out of Stock</td>
+            </tr>
+
+            <tr>
+                <td>P104</td>
+                <td>Keyboard</td>
+                <td>Accessories</td>
+                <td class="price">₹1,500</td>
+                <td class="available">Available</td>
+            </tr>
+
+        </table>
+    </div>
+
+</body>
+</html>
